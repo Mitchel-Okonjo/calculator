@@ -47,12 +47,13 @@ body {
 
 button {
     flex: 1;
-    border-radius: 5px;
+    border-radius: 2px;
     font-size: 35px;
+    border: 1px solid black;
 }
 
 .zero {
-    flex-grow: 2.05;
+    flex-grow: 2.02;
 }
 
 .operator, .equals {
