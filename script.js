@@ -111,3 +111,27 @@ function performOperation(array) {
     }
      return operate(operator, num1, num2);
 }
+
+function displayContent() {
+    if (firstOperand === "" && secondOperand === "") {
+        display.textContent = "0";
+    }
+    else if (displayValue.length > 13) {
+        if (displayValue.includes(".")) {
+            display.textContent = displayValue.substring(0, 13);
+        }
+    }
+    else {
+        display.textContent = displayValue;
+    }
+}
+
+function clearScreen() {
+    operatorCount = 0;
+    operationPair = [];
+    firstOperand = "";
+    secondOperand = "";
+    result = "";
+    displayValue = "";
+    currentOperator = "";
+}
