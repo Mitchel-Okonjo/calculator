@@ -91,3 +91,23 @@ function getEquals() {
         firstOperand = displayValue;
     }
 }
+
+function performOperation(array) {
+    const operator = array[1];
+    let num1 = 0;
+    let num2 = 0;
+    if (array[0].includes(".")) {
+        num1 = parseFloat(array[0]);
+    }
+    else {
+        num1 = parseInt(array[0]);
+    }
+
+    if (array[2].includes(".")) {
+        num2 = parseFloat(array[2]);
+    }
+    else {
+        num2 = parseInt(array[2]);
+    }
+     return operate(operator, num1, num2);
+}
