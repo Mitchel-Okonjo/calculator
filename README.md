@@ -1,1 +1,2 @@
 This project is a web calculator created with HTML, CSS and Javascript. It can perform the basic arithmetic operations on numbers and display an output.
+Check out the calculator through [this live link](https://mitchel-okonjo.github.io/calculator/)
