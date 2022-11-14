@@ -41,7 +41,7 @@ body {
     margin: 8px 0px;
     justify-content: space-around;
     align-items: flex-end;
-    font-size: 70px;
+    font-size: 60px;
 
 }
 
@@ -56,15 +56,31 @@ button {
     flex-grow: 2.02;
 }
 
-.operator, .equals {
+.right {
     background-color: orange;
 }
 
-.operand, .point{
+.center{
     background-color: lightgrey;
 }
 
-.clear, .sign, .percent {
+.top {
     background-color: lightseagreen;
+}
+
+.active-top {
+    background-color: darkseagreen;
+}
+
+.active-right {
+    background-color: darkorange;
+}
+
+.active-center {
+    background-color: darkgrey;
+}
+
+.active-operator {
+    border: solid darkgrey;
 }
 
