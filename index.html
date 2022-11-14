@@ -6,38 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="calculator">
-        <div class="display">0</div>
+        <div class="display"></div>
         <div class="row">
-            <button class="clear">AC</button>
-            <button class="sign">&plus;/&minus;</button>
-            <button class="percent">%</button>
-            <button class="operator">&divide;</button>
+            <button class="clear top">AC</button>
+            <button class="sign top">&plus;/&minus;</button>
+            <button class="percent top">%</button>
+            <button class="operator right" value="/">&divide;</button>
         </div>
         <div class="row">
-            <button class="operand">7</button>
-            <button class="operand">8</button>
-            <button class="operand">9</button>
-            <button class="operator">&times;</button>
+            <button class="operand center">7</button>
+            <button class="operand center">8</button>
+            <button class="operand center">9</button>
+            <button class="operator right" value="*">&times;</button>
         </div>
         <div class="row">
-            <button class="operand">4</button>
-            <button class="operand">5</button>
-            <button class="operand">6</button>
-            <button class="operator">&minus;</button>
+            <button class="operand center">4</button>
+            <button class="operand center">5</button>
+            <button class="operand center">6</button>
+            <button class="operator right" value="-">&minus;</button>
         </div>
         <div class="row">
-            <button class="operand">1</button>
-            <button class="operand">2</button>
-            <button class="operand">3</button>
-            <button class="operator">&plus;</button>
+            <button class="operand center">1</button>
+            <button class="operand center">2</button>
+            <button class="operand center">3</button>
+            <button class="operator right" value="+">&plus;</button>
         </div>
         <div class="row">
-            <button class="zero operand">0</button>
-            <button class="point">.</button>
-            <button class="equals">&equals;</button>
+            <button class="zero operand center">0</button>
+            <button class="operand point center">.</button>
+            <button class="equals right">&equals;</button>
         </div>
     </div>
     
