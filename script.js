@@ -73,3 +73,21 @@ function getOperator (operator) {
     }
     currentOperator = operator;
 }
+
+function getEquals() {
+    if (operatorCount >= 1 && firstOperand !== "" && secondOperand !== "") {
+        operationPair = [];
+        operationPair.push(firstOperand);
+        operationPair.push(currentOperator);
+        operationPair.push(secondOperand);
+        result = "";
+        result += performOperation(operationPair);
+        displayValue = result;
+        firstOperand = displayValue;
+        secondOperand = "";
+    }
+    else if (operatorCount === 0 && firstOperand !== "" && secondOperand === "") {
+        displayValue = displayValue;
+        firstOperand = displayValue;
+    }
+}
