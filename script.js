@@ -1,3 +1,66 @@
+const calculator = document.querySelector('.calculator');
+const display = document.querySelector('.display');
+let operatorCount = 0;
+let operationPair = [];
+let firstOperand = "";
+let secondOperand = "";
+let result = "";
+let displayValue = "";
+let currentOperator = "";
+
+displayContent();
+
+calculator.addEventListener('click', (e) => {
+    const classList = e.target.classList;
+    const buttonValue = e.target.textContent;
+    const operator = e.target.value;
+    if (classList.contains('operand')) {
+        getOperand(buttonValue);
+        displayContent();
+    }
+    else if (classList.contains('operator')) {
+        classList.add('active-operator');
+        getOperator(operator);
+        displayContent();
+    }
+    else if (classList.contains('equals')) {
+        getEquals();
+        displayContent();
+    }
+    else if (classList.contains('clear')) {
+        clearScreen();
+        displayContent();
+    }
+});
+
+calculator.addEventListener('mousedown', (e) => {
+    const classList = e.target.classList;
+    const buttonValue = e.target.textConetent;
+    const operator = e.target.value;
+    if (classList.contains('center')) {
+        classList.add('active-center');
+    }
+    else if (classList.contains('top')) {
+        classList.add('active-top');
+    }
+    else if (classList.contains('right')) {
+        classList.add('active-right');
+    }
+});
+
+calculator.addEventListener('mouseup', (e) => {
+    const classList = e.target.classList;
+    if (classList.contains('center')) {
+        classList.remove('active-center');
+    }
+    else if (classList.contains('top')) {
+        classList.remove('active-top');
+    }
+    else if (classList.contains('right')) {
+        classList.remove('active-right');
+    }
+});
+
 function add(num1, num2) {
     return num1 + num2;
 }
